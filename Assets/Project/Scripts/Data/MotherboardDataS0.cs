@@ -11,6 +11,8 @@ namespace MestreDoPC
         public RamType ramType;
         public int ramSlots = 2;
         public int maxRamGB = 64;
+
         public override ComponentCategory Category => ComponentCategory.Motherboard;
+        public override string SpecsSummary => $"{socket} • {ramType} • {formFactor} • {ramSlots} slots (máx. {maxRamGB} GB)";
     }
 }

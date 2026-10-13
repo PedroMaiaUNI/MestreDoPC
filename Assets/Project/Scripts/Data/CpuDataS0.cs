@@ -10,6 +10,8 @@ namespace MestreDoPC
         public int cores;
         public int threads;
         public bool hasIntegratedGraphics;
+
         public override ComponentCategory Category => ComponentCategory.Cpu;
+        public override string SpecsSummary => $"{socket} • {cores}C/{threads}T • {tdp} W" + (hasIntegratedGraphics ? " • vídeo integrado" : "");
     }
 }

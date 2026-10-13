@@ -7,6 +7,8 @@ namespace MestreDoPC
     {
         public StorageType type;
         public int capacityGB;
+
         public override ComponentCategory Category => ComponentCategory.Storage;
+        public override string SpecsSummary => $"{type} • {capacityGB} GB";
     }
 }

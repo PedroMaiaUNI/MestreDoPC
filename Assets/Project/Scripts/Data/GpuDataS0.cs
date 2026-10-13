@@ -7,6 +7,8 @@ namespace MestreDoPC{
     {
         public int tdp;
         public int vramGB;
+
         public override ComponentCategory Category => ComponentCategory.Gpu;
+        public override string SpecsSummary => $"{vramGB} GB VRAM • {tdp} W";
     }
 }

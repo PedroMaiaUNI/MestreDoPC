@@ -17,6 +17,7 @@ namespace MestreDoPC
 
         public abstract ComponentCategory Category { get; }
         public string DisplayName => $"{brand} {model}";
+        public virtual string SpecsSummary => string.Empty;
 
         private void OnValidate()
         {

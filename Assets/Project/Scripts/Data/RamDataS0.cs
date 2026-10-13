@@ -7,6 +7,8 @@ namespace MestreDoPC{
         public RamType type;
         public int capacityGB;   // por módulo
         public int speedMhz;
+
         public override ComponentCategory Category => ComponentCategory.Ram;
+        public override string SpecsSummary => $"{type} • {capacityGB} GB • {speedMhz} MHz";
     }
 }
