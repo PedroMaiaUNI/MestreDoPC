@@ -13,5 +13,17 @@ namespace MestreDoPC
             ComponentCategory.Cooler      => "Cooler",
             _                             => c.ToString()
         };
+
+        public static string Short(ComponentCategory c) => c switch
+        {
+            ComponentCategory.Motherboard => "MOBO",
+            ComponentCategory.Cpu         => "CPU",
+            ComponentCategory.Ram         => "RAM",
+            ComponentCategory.Storage     => "HD",
+            ComponentCategory.Gpu         => "GPU",
+            ComponentCategory.Psu         => "PSU",
+            ComponentCategory.Cooler      => "COOL",
+            _                             => "?"
+        };
     }
 }

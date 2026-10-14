@@ -52,7 +52,7 @@ namespace MestreDoPC
             _                             => Vector3.one * 0.2f
         };
 
-        private static Color ColorOf(ComponentCategory c) => c switch
+        public static Color ColorOf(ComponentCategory c) => c switch
         {
             ComponentCategory.Motherboard => new Color(0.10f, 0.50f, 0.20f),
             ComponentCategory.Cpu         => new Color(0.60f, 0.60f, 0.65f),
