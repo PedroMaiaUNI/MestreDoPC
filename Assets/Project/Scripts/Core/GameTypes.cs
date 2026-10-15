@@ -12,5 +12,6 @@ namespace MestreDoPC
         public const string Records = "03_Records";
         public const string Workshop = "05_Workshop";
         public const string PartsManual = "08_PartsManual";
+        public const string Evaluation = "09_Evaluation";
     }
 }
