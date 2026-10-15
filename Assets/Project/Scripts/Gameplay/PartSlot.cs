@@ -43,6 +43,7 @@ namespace MestreDoPC
         {
             Installed = part;
             part.CurrentSlot = this;
+            part.InstallCount++;
             part.transform.SetPositionAndRotation(snapPoint.position, snapPoint.rotation);
             hologram.SetActive(false);
         }

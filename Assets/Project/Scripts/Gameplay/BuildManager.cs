@@ -11,6 +11,7 @@ namespace MestreDoPC
         public int WrongAttempts { get; private set; }   // usado na pontuação (Etapa 7)
 
         public event Action<PcBuild, CompatibilityReport> OnBuildChanged;
+        public event Action<PartView> OnPartRemoved;
 
         public bool CanInstall(PartSlot slot, PartView part, out string reason)
         {
@@ -67,6 +68,12 @@ namespace MestreDoPC
             return true;
         }
 
+        public void ForceInstall(PartSlot slot, PartView part)
+        {
+            slot.Place(part);
+            Rebuild();
+        }
+
         public void Remove(PartView part)
         {
             var slot = part.CurrentSlot;
@@ -74,6 +81,7 @@ namespace MestreDoPC
 
             slot.Clear();
             part.SetFeedback(PartFeedback.None);
+            OnPartRemoved?.Invoke(part);
 
             // Sem a placa-mãe, tudo que dependia dela volta para a bandeja.
             if (part.Data is MotherboardDataSO)

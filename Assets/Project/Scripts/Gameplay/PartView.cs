@@ -47,5 +47,7 @@ namespace MestreDoPC
                 };
             }
         }
+
+        public int InstallCount { get; set; }
     }
 }

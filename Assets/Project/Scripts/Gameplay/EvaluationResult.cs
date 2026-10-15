@@ -14,6 +14,9 @@ namespace MestreDoPC
         public int budget, spent, buildPrice;
         public float elapsedSeconds;
 
+        public string headline;
+        public List<string> detailLines = new List<string>();
+
         public List<string> unmetRequirements = new List<string>();
         public List<string> issues = new List<string>();
 

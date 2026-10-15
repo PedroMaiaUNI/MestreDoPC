@@ -6,11 +6,11 @@ namespace MestreDoPC
 {
     public class MissionSession : Singleton<MissionSession>
     {
-        // Static de propósito: sobrevive à troca de cena e é lido pela tela de resultado.
-        public static EvaluationResult LastResult { get; private set; }
+        public static EvaluationResult LastResult { get; set; }
+        public static event Action<EvaluationResult> OnResultReady; 
 
         [SerializeField] private MissionCatalogSO catalog;
-        [SerializeField] private MissionDataSO fallbackMission;   // usada se o catálogo não achar (ou sem Boot)
+        [SerializeField] private MissionDataSO fallbackMission;
 
         public MissionDataSO Mission { get; private set; }
         public float Elapsed { get; private set; }
@@ -48,7 +48,6 @@ namespace MestreDoPC
             if (Mission.timeLimitSeconds > 0 && Elapsed >= Mission.timeLimitSeconds) Finish(true);
         }
 
-        // Ligado ao botão "Ligar PC".
         public void OnFinishPressed()
         {
             if (Finished) return;
@@ -71,6 +70,7 @@ namespace MestreDoPC
                 Mission, BuildManager.Instance.Build, BuildManager.Instance.Report,
                 BudgetManager.Instance.Spent, Elapsed, BuildManager.Instance.WrongAttempts);
             LastResult.timedOut = timedOut;
+            OnResultReady?.Invoke(LastResult);
 
             if (SaveManager.Instance != null && LastResult.Total > 0)
             {

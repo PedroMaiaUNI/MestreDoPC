@@ -20,6 +20,14 @@ namespace MestreDoPC
                 return;
             }
 
+            if (r.detailLines.Count > 0)   
+            {
+                titleText.text = r.headline;
+                scoreText.text = $"{r.Total} / {ScoreCalculator.MaxTotal}" + (r.isNewRecord ? "   Novo recorde!" : "");
+                detailsText.text = string.Join("\n", r.detailLines);
+                return;
+            }
+
             titleText.text = r.bootable ? "PC montado com sucesso!"
                            : r.timedOut ? "O tempo acabou" : "O PC não ligou";
             scoreText.text = $"{r.Total} / {ScoreCalculator.MaxTotal}" + (r.isNewRecord ? "   Novo recorde!" : "");
@@ -48,7 +56,9 @@ namespace MestreDoPC
             detailsText.text = sb.ToString();
         }
 
-        public void OnReplay() => Go(SceneNames.Workshop);
+        public void OnReplay() => Go(SceneNames.ForMode(
+            GameManager.Instance != null ? GameManager.Instance.CurrentMode : GameMode.Assembly)
+        );
         public void OnMenu() => Go(SceneNames.MainMenu);
 
         private static void Go(string scene)
