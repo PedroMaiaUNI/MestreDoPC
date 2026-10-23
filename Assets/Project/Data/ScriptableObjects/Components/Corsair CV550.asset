@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb3a3b488f1003bec754a04ebc71691dd78d93636c40dbf1ed0a692afa814b9c
-size 591
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4571df4f84b553109ef9a0cfee5f15b, type: 3}
+  m_Name: Corsair CV550
+  m_EditorClassIdentifier: 
+  id: PSU-WEAK
+  brand: Corsair
+  model: Corsair CV550
+  price: 350
+  description: "N\xE3o modular"
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  wattage: 550
+  certification: 80 Plus Bronze

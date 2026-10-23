@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3182534532e09e5a7bc781fc164802bbb650d004924e90ae26cda36e4dd2e16
-size 612
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b1b80bfdfcc2448e547b0c8d2da6f, type: 3}
+  m_Name: ASUS Prime A520M-K
+  m_EditorClassIdentifier: 
+  id: AM4-DDR4
+  brand: ASUS
+  model: Prime A520M-K
+  price: 450
+  description: 
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  socket: 0
+  chipset: 
+  formFactor: 1
+  ramType: 0
+  ramSlots: 2
+  maxRamGB: 64

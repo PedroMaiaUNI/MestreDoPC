@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47a45d22d58e82f4c5bf3f9954bb9f8fb0e8b1f2a45ff66dbd7433cd8edd60eb
-size 585
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4e09761ad216073865ec8143aa68b7, type: 3}
+  m_Name: Stock AMD Wraith
+  m_EditorClassIdentifier: 
+  id: COOLER-AM5
+  brand: AMD
+  model: Stock AMD Wraith
+  price: 0
+  description: 
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  type: 0
+  supportedSockets: 00000000
+  tdpRating: 65

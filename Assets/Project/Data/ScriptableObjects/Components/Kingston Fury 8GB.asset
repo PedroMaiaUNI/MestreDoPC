@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1cdde14819dce0a4e315d99bfd0a320e022652e51d74b060e3517b92f2bccc90
-size 580
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96975fe76f6b26918a65aa25cf0bfaaa, type: 3}
+  m_Name: Kingston Fury 8GB
+  m_EditorClassIdentifier: 
+  id: RAM-DDR4
+  brand: Kingston
+  model: Kingston Fury 8GB
+  price: 150
+  description: 
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  type: 0
+  capacityGB: 8
+  speedMhz: 3200

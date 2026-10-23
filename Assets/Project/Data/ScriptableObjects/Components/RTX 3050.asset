@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5363e1e2f174e485cbf25e634c1e1b636197405779f31a5c2fd1fbd86e906882
-size 538
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8c01520a09f947eb77d8a5f9f9bf68, type: 3}
+  m_Name: RTX 3050
+  m_EditorClassIdentifier: 
+  id: GPU-1
+  brand: Nvidia
+  model: RTX 3050
+  price: 1500
+  description: 
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  tdp: 130
+  vramGB: 8

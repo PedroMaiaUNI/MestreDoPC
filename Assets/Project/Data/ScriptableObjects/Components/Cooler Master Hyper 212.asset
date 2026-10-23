@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5bfe1ce60e7d2f143961002a22e8074687d0c3387b1457822e9d80cef8059b75
-size 606
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4e09761ad216073865ec8143aa68b7, type: 3}
+  m_Name: Cooler Master Hyper 212
+  m_EditorClassIdentifier: 
+  id: COOLER-AM4
+  brand: Cooler Master
+  model: Hyper 212
+  price: 200
+  description: 
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  type: 0
+  supportedSockets: 0000000001000000
+  tdpRating: 150

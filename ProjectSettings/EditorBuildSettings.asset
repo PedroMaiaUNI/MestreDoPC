@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3432b6c4cc35e820876ad2a397a12ee3e237c92b8285f958fb3bf5a8fc23be48
-size 1028
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Project/Scenes/00_Boot.unity
+    guid: 910394f340d0dfd10beb5d0330345e63
+  - enabled: 1
+    path: Assets/Project/Scenes/01_MainMenu.unity
+    guid: b775a58616cff27d0a35d2906197b260
+  - enabled: 1
+    path: Assets/Project/Scenes/02_Options.unity
+    guid: 05f8dffaaeec138b38448a09dad32eea
+  - enabled: 1
+    path: Assets/Project/Scenes/03_Records.unity
+    guid: 6e028092d78c514629deec20b2645c28
+  - enabled: 1
+    path: Assets/Project/Scenes/05_Workshop.unity
+    guid: a667cffb95b4cff608fdd7b5f97423a0
+  - enabled: 1
+    path: Assets/Project/Scenes/06_MaintenanceArena.unity
+    guid: 2b6dc80815425c970bf3a7f14e528ce9
+  - enabled: 1
+    path: Assets/Project/Scenes/08_PartsManual.unity
+    guid: 90ed96928a758ad2e9515519c5adc1b7
+  - enabled: 1
+    path: Assets/Project/Scenes/09_Evaluation.unity
+    guid: a91305009f0378afa9bb37663875d648
+  m_configObjects: {}

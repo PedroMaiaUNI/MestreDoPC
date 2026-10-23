@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e23c570aad0647bf9fef858ce91ef6c4edb66b9f311b761e9627a0e1a0e8b25
-size 604
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b1b80bfdfcc2448e547b0c8d2da6f, type: 3}
+  m_Name: Gigabyte 560M
+  m_EditorClassIdentifier: 
+  id: AM5-DDR5
+  brand: Gigabyte
+  model: B650M
+  price: 900
+  description: 
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  socket: 1
+  chipset: 
+  formFactor: 1
+  ramType: 1
+  ramSlots: 2
+  maxRamGB: 128

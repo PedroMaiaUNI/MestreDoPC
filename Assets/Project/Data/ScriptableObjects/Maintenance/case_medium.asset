@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b3395ff933029fe1f7e002ec641a8e4c4075a1d4d93526f83b253268612e1189
-size 1491
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f477dd39e923fb9f96cbd1477bf80ce, type: 3}
+  m_Name: case_medium
+  m_EditorClassIdentifier: 
+  id: 
+  title: Tela preta
+  clientComplaint: "Liguei o PC hoje e a tela ficou preta. Ou\xE7o o PC ligar, mas
+    nada aparece."
+  difficulty: 1
+  budget: 400
+  timeLimitSeconds: 420
+  motherboard: {fileID: 11400000, guid: c95ff80f0c1f703f0bfe3be4ee7bfa8b, type: 2}
+  cpu: {fileID: 11400000, guid: b01bb440b41c4452ca64a0499ab0cbad, type: 2}
+  ram: {fileID: 11400000, guid: ed043860bc4f5a2358483be4b54d0a30, type: 2}
+  ramQuantity: 1
+  storage:
+  - {fileID: 11400000, guid: 96563391cb27f542cb8ff4838973ef5a, type: 2}
+  gpu: {fileID: 11400000, guid: 9293db999b6eb7931b42be6563268570, type: 2}
+  psu: {fileID: 11400000, guid: 62dc875ae1714e1f9bd60457ae437f39, type: 2}
+  cooler: {fileID: 11400000, guid: 9ff912cddb2ff6ac3ba04fb38b2f4ac2, type: 2}
+  defects:
+  - category: 2
+    type: 0
+    symptom: "Liga, mas apita e n\xE3o d\xE1 v\xEDdeo."
+    inspectionHint: "Os contatos do pente de mem\xF3ria est\xE3o oxidados."
+  - category: 4
+    type: 1
+    symptom: "A tela continua sem sinal, mesmo com a mem\xF3ria trocada."
+    inspectionHint: "A placa de v\xEDdeo parece levemente solta no slot."

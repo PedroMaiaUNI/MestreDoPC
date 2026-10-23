@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b19a188640015da1d709721d4098be65652c52b520629d23006b87979c02a844
-size 582
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4571df4f84b553109ef9a0cfee5f15b, type: 3}
+  m_Name: Corsair RM750
+  m_EditorClassIdentifier: 
+  id: PSU-STRONG
+  brand: Corsair
+  model: Corsair RM750
+  price: 700
+  description: Modular
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  wattage: 750
+  certification: 80 Plus Gold

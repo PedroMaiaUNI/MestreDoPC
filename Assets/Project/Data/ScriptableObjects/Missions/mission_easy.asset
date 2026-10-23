@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a2a64a06e6c9ebc5a1314e59c219b5d26962fe4c9ae6a5729e2047d674e64ad
-size 683
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24cc38b138ac178b6ccc3bd0188044, type: 3}
+  m_Name: mission_easy
+  m_EditorClassIdentifier: 
+  id: 
+  title: "Esta\xE7\xE3o de estudos"
+  clientBrief: Bom dia, estou a procura de um computador para me ajudar nos estudos!
+    Tem como me ajudar?
+  mode: 0
+  difficulty: 0
+  budget: 3500
+  timeLimitSeconds: 0
+  minRamGB: 16
+  minStorageGB: 500
+  minCores: 6
+  minGpuVramGB: 0
