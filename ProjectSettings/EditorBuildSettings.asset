@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/06_MaintenanceArena.unity
     guid: 2b6dc80815425c970bf3a7f14e528ce9
   - enabled: 1
+    path: Assets/Project/Scenes/07_AIChallengeArena.unity
+    guid: e725e64192228aa7da60f654fedf52bb
+  - enabled: 1
     path: Assets/Project/Scenes/08_PartsManual.unity
     guid: 90ed96928a758ad2e9515519c5adc1b7
   - enabled: 1
