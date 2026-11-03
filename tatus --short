@@ -1,0 +1,118 @@
+warning: in the working copy of '.gitattributes', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Art.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Art/Animations.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Art/Materials.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Art/Models.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Art/Textures.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Audio.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Audio/Ambient.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Audio/Music.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Audio/SFX.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Data.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Data/ScriptableObjects.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Data/ScriptableObjects/AIProfiles.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Data/ScriptableObjects/Components.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Data/ScriptableObjects/Missions.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Prefabs.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Prefabs/Components.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Prefabs/Managers.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Prefabs/UI.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/00_Boot.unity', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/00_Boot.unity.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/01_MainMenu.unity', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/01_MainMenu.unity.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/02_Options.unity', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/02_Options.unity.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/03_Records.unity', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/03_Records.unity.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/04_ModeSelection.unity', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/04_ModeSelection.unity.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/05_Workshop.unity', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/05_Workshop.unity.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/06_MaintenanceArena.unity', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/06_MaintenanceArena.unity.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/07_ChallengeArena.unity', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/07_ChallengeArena.unity.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/08_PartsManual.unity', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/08_PartsManual.unity.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/09_Evaluation.unity', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/09_Evaluation.unity.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/SampleScene.unity', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scenes/SampleScene.unity.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Audio.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Core.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Core/Bootstrapper.cs.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Core/GameManager.cs.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Core/GameTypes.cs.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Core/SceneLoader.cs.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Core/Singleton.cs.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Data.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Gameplay.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/SampleSceneProfile.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/SampleSceneProfile.asset.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/URP-Balanced-Renderer.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/URP-Balanced-Renderer.asset.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/URP-Balanced.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/URP-Balanced.asset.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/URP-HighFidelity-Renderer.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/URP-HighFidelity-Renderer.asset.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/URP-HighFidelity.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/URP-HighFidelity.asset.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/URP-Performant-Renderer.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/URP-Performant-Renderer.asset.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/URP-Performant.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/Tutorial/URP-Performant.asset.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/UI.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Project/Scripts/UI/MainMenuController.cs.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Readme.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Readme.asset.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Blue to Purple - Vertical.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Dark to Light Green - Vertical.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Light to Dark Green - Vertical.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Yellow to Orange - Vertical.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/Default Sprite Asset.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/DropCap Numbers.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Resources/TMP Settings.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TutorialInfo.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TutorialInfo/Icons.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TutorialInfo/Icons/URP.png.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TutorialInfo/Layout.wlt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TutorialInfo/Layout.wlt.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TutorialInfo/Scripts.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TutorialInfo/Scripts/Editor.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TutorialInfo/Scripts/Readme.cs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TutorialInfo/Scripts/Readme.cs.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/UniversalRenderPipelineGlobalSettings.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/UniversalRenderPipelineGlobalSettings.asset.meta', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Packages/manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Packages/packages-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/AudioManager.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/BurstAotSettings_StandaloneWindows.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/ClusterInputManager.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/CommonBurstAotSettings.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/DynamicsManager.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/EditorBuildSettings.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/EditorSettings.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/GraphicsSettings.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/InputManager.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/MemorySettings.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/NavMeshAreas.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/PackageManagerSettings.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/Physics2DSettings.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/PresetManager.asset', LF will be replaced by CRLF the next time Git touches it
