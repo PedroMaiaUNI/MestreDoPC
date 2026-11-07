@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 115179618}
   - component: {fileID: 115179617}
   - component: {fileID: 115179621}
+  - component: {fileID: 115179622}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -301,6 +302,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb0f9af62f7ed2b5882107ab36ff3bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &115179622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115179616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25aab265a007a0a3ca68945116188ad7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxOverrides:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  musicClip: {fileID: 0}
 --- !u!1 &387886572
 GameObject:
   m_ObjectHideFlags: 0
