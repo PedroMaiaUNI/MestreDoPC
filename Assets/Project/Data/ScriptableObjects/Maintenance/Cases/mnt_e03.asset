@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f477dd39e923fb9f96cbd1477bf80ce, type: 3}
+  m_Name: mnt_e03
+  m_EditorClassIdentifier: 
+  id: mnt_e03
+  title: "Apita e n\xE3o d\xE1 imagem"
+  clientComplaint: 'Seu Joaquim: "Liguei o PC e ele apita, mas a tela fica preta.
+    Mexi dentro dele ontem para limpar."'
+  difficulty: 0
+  budget: 200
+  timeLimitSeconds: 300
+  motherboard: {fileID: 11400000, guid: a9721109ee2a39d58912db091e1f0303, type: 2}
+  cpu: {fileID: 11400000, guid: 56bd06ec425425f2c86b5358e2bf5395, type: 2}
+  ram: {fileID: 11400000, guid: 5aacdda3e7cc565a28fe8aa094ca080b, type: 2}
+  ramQuantity: 2
+  storage:
+  - {fileID: 11400000, guid: a06ee0b65b32f812ebf64298268bd8f1, type: 2}
+  gpu: {fileID: 0}
+  psu: {fileID: 11400000, guid: 774228d5a7943ad7c997b8257bbfa82c, type: 2}
+  cooler: {fileID: 11400000, guid: 362531cde0948f29e8f355ed87ee3653, type: 2}
+  defects:
+  - category: 2
+    type: 1
+    symptom: "O PC apita em sequ\xEAncia e n\xE3o mostra imagem."
+    inspectionHint: "Um dos pentes de mem\xF3ria parece torto, fora do encaixe."

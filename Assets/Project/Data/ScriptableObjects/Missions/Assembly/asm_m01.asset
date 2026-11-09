@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24cc38b138ac178b6ccc3bd0188044, type: 3}
+  m_Name: asm_m01
+  m_EditorClassIdentifier: 
+  id: asm_m01
+  title: Gamer de entrada
+  clientBrief: "Rafael, 17 anos: \"Quero jogar os lan\xE7amentos em Full HD sem gastar
+    uma fortuna. A placa de v\xEDdeo \xE9 o que mais importa.\"\n\nRequisitos: RAM
+    m\xEDn. 16 GB | armazenamento m\xEDn. 500 GB | CPU com 6+ n\xFAcleos | GPU com
+    6+ GB de VRAM. Or\xE7amento: R$ 4,300. Tempo: 9:00."
+  mode: 0
+  difficulty: 1
+  budget: 4300
+  timeLimitSeconds: 540
+  minRamGB: 16
+  minStorageGB: 500
+  minCores: 6
+  minGpuVramGB: 6

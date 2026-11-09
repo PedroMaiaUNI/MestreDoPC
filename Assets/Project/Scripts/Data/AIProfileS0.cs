@@ -14,5 +14,8 @@ namespace MestreDoPC
         [Header("Qualidade da escolha (0 = a melhor montagem, 1 = a pior válida)")]
         [Range(0f, 1f)] public float rankMin = 0f;
         [Range(0f, 1f)] public float rankMax = 0.1f;
+
+        [Header("Desempenho (a nota da IA é multiplicada por um valor sorteado neste intervalo)")]
+        public Vector2 performanceRange = new Vector2(0.9f, 1f);
     }
 }

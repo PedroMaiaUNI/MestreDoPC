@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f477dd39e923fb9f96cbd1477bf80ce, type: 3}
+  m_Name: mnt_h03
+  m_EditorClassIdentifier: 
+  id: mnt_h03
+  title: "A montagem do estagi\xE1rio"
+  clientComplaint: "Gerente da loja: \"O estagi\xE1rio montou este PC de um cliente
+    e nunca funcionou. Ele jura que seguiu o manual.\""
+  difficulty: 2
+  budget: 700
+  timeLimitSeconds: 540
+  motherboard: {fileID: 11400000, guid: ed2799c3e30d82a2e86c8a6c05ad95f6, type: 2}
+  cpu: {fileID: 11400000, guid: b5e64b280d25f590c8b96c63979a7598, type: 2}
+  ram: {fileID: 11400000, guid: 5aacdda3e7cc565a28fe8aa094ca080b, type: 2}
+  ramQuantity: 1
+  storage:
+  - {fileID: 11400000, guid: a06ee0b65b32f812ebf64298268bd8f1, type: 2}
+  gpu: {fileID: 11400000, guid: 845f100002d7b491b8e7b97e1487aefd, type: 2}
+  psu: {fileID: 11400000, guid: bbfc08746b67c3e39813d6258945dc88, type: 2}
+  cooler: {fileID: 11400000, guid: 2a34157443a30db048c574f393a977aa, type: 2}
+  defects:
+  - category: 2
+    type: 0
+    symptom: "O PC n\xE3o liga: o tipo de mem\xF3ria n\xE3o combina com a placa-m\xE3e."
+    inspectionHint: "A placa-m\xE3e usa mem\xF3ria DDR5, mas o pente instalado \xE9
+      DDR4."
+  - category: 6
+    type: 0
+    symptom: "O PC n\xE3o liga: o cooler n\xE3o suporta o soquete do processador."
+    inspectionHint: "O cooler foi projetado para AMD e n\xE3o encaixa no soquete
+      Intel dessa placa."
+  - category: 4
+    type: 1
+    symptom: "Depois de resolver tudo, n\xE3o aparece imagem."
+    inspectionHint: "A placa de v\xEDdeo est\xE1 torta no slot PCIe."

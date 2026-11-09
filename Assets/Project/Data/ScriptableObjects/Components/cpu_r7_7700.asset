@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def4770f49b529effb20f5573918f0cb, type: 3}
+  m_Name: cpu_r7_7700
+  m_EditorClassIdentifier: 
+  id: cpu_r7_7700
+  brand: AMD
+  model: Ryzen 7 7700
+  price: 1650
+  description: "Oito n\xFAcleos modernos (AM5) com v\xEDdeo integrado b\xE1sico."
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  socket: 1
+  tdp: 65
+  cores: 8
+  threads: 16
+  hasIntegratedGraphics: 1

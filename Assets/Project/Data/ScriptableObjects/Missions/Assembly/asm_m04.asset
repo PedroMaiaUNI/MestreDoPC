@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24cc38b138ac178b6ccc3bd0188044, type: 3}
+  m_Name: asm_m04
+  m_EditorClassIdentifier: 
+  id: asm_m04
+  title: "Escrit\xF3rio de arquitetura"
+  clientBrief: "Let\xEDcia, arquiteta: \"Modelamos projetos em 3D e renderizamos
+    imagens. Precisa de bastante mem\xF3ria e uma placa de v\xEDdeo razo\xE1vel.\"\n\nRequisitos:
+    RAM m\xEDn. 32 GB | armazenamento m\xEDn. 500 GB | CPU com 6+ n\xFAcleos | GPU
+    com 4+ GB de VRAM. Or\xE7amento: R$ 4,400. Tempo: 7:00."
+  mode: 0
+  difficulty: 1
+  budget: 4400
+  timeLimitSeconds: 420
+  minRamGB: 32
+  minStorageGB: 500
+  minCores: 6
+  minGpuVramGB: 4

@@ -41,7 +41,7 @@ namespace MestreDoPC
             var gm = GameManager.Instance;
             Difficulty diff = gm != null ? gm.CurrentDifficulty : Difficulty.Easy;
 
-            Case = catalog != null ? catalog.Find(diff) : null;
+            Case = catalog != null ? catalog.Pick(diff) : null;
             if (Case == null) Case = fallbackCase;
             if (Case == null)
             {

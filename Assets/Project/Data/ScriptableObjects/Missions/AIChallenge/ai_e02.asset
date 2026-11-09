@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24cc38b138ac178b6ccc3bd0188044, type: 3}
+  m_Name: ai_e02
+  m_EditorClassIdentifier: 
+  id: ai_e02
+  title: "Desafio da vizinhan\xE7a"
+  clientBrief: "A vizinhan\xE7a apostou: quem monta o melhor PC para a fam\xEDlia
+    toda, voc\xEA ou a IA? Mem\xF3ria de sobra e espa\xE7o para as fotos.\n\nRequisitos:
+    RAM m\xEDn. 16 GB | armazenamento m\xEDn. 500 GB | CPU com 4+ n\xFAcleos. Or\xE7amento:
+    R$ 3,000. Tempo: 11:00."
+  mode: 1
+  difficulty: 0
+  budget: 3000
+  timeLimitSeconds: 660
+  minRamGB: 16
+  minStorageGB: 500
+  minCores: 4
+  minGpuVramGB: 0

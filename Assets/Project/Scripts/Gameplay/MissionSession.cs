@@ -25,7 +25,7 @@ namespace MestreDoPC
             GameMode mode = gm != null ? gm.CurrentMode : GameMode.Assembly;
             Difficulty diff = gm != null ? gm.CurrentDifficulty : Difficulty.Easy;
 
-            Mission = catalog != null ? catalog.Find(mode, diff) : null;
+            Mission = catalog != null ? catalog.Pick(mode, diff) : null;
             if (Mission == null)
             {
                 Debug.LogWarning($"Nenhuma missão para {mode}/{diff}; usando a missão padrão.");

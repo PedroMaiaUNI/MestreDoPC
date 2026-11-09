@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f477dd39e923fb9f96cbd1477bf80ce, type: 3}
+  m_Name: mnt_e02
+  m_EditorClassIdentifier: 
+  id: mnt_e02
+  title: Barulho de turbina
+  clientComplaint: "Fernanda: \"O PC faz um barulho de avi\xE3o quando abro jogos
+    e a imagem come\xE7a a travar.\""
+  difficulty: 0
+  budget: 300
+  timeLimitSeconds: 300
+  motherboard: {fileID: 11400000, guid: 9ea5c58fe0bd2377093009556c902f14, type: 2}
+  cpu: {fileID: 11400000, guid: a3f201698b057ec63bdefe8fbb40942b, type: 2}
+  ram: {fileID: 11400000, guid: 5aacdda3e7cc565a28fe8aa094ca080b, type: 2}
+  ramQuantity: 1
+  storage:
+  - {fileID: 11400000, guid: 1fa187447506a7e3bae7e0ac8bb125bc, type: 2}
+  gpu: {fileID: 11400000, guid: 8d90acf8e6a1e1887b6571f99f221705, type: 2}
+  psu: {fileID: 11400000, guid: 774228d5a7943ad7c997b8257bbfa82c, type: 2}
+  cooler: {fileID: 11400000, guid: e4473bb21c9ec6af78fb29364dd110a1, type: 2}
+  defects:
+  - category: 4
+    type: 2
+    symptom: "A placa de v\xEDdeo chega a temperaturas alt\xEDssimas e a ventoinha
+      gira no m\xE1ximo."
+    inspectionHint: "As ventoinhas da placa de v\xEDdeo est\xE3o entupidas de poeira."

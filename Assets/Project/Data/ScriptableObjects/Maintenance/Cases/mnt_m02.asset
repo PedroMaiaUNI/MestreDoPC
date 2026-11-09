@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f477dd39e923fb9f96cbd1477bf80ce, type: 3}
+  m_Name: mnt_m02
+  m_EditorClassIdentifier: 
+  id: mnt_m02
+  title: Artefatos e superaquecimento
+  clientComplaint: 'Diego: "Aparecem riscos coloridos na tela e o PC esquenta demais
+    depois de uma hora jogando."'
+  difficulty: 1
+  budget: 1500
+  timeLimitSeconds: 480
+  motherboard: {fileID: 11400000, guid: e32256c5f16a72b2c922f74b88c1c35a, type: 2}
+  cpu: {fileID: 11400000, guid: 7fddf09072a4a04469c57fda14bab04e, type: 2}
+  ram: {fileID: 11400000, guid: 1d0c4af0664dd2b708b97d704b0ad81b, type: 2}
+  ramQuantity: 2
+  storage:
+  - {fileID: 11400000, guid: 85da0be6245459efa9838bb4afe1a216, type: 2}
+  gpu: {fileID: 11400000, guid: 845f100002d7b491b8e7b97e1487aefd, type: 2}
+  psu: {fileID: 11400000, guid: c14b6a37cda6fcf73a3709e20a10b1fb, type: 2}
+  cooler: {fileID: 11400000, guid: 2a34157443a30db048c574f393a977aa, type: 2}
+  defects:
+  - category: 6
+    type: 2
+    symptom: "O PC esquenta muito e as ventoinhas ficam no m\xE1ximo o tempo todo."
+    inspectionHint: "O dissipador do processador est\xE1 tomado por poeira."
+  - category: 4
+    type: 0
+    symptom: Riscos coloridos e travamentos mesmo com o PC frio.
+    inspectionHint: "A placa de v\xEDdeo tem a mem\xF3ria danificada pelo calor."

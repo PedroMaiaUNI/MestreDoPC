@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def4770f49b529effb20f5573918f0cb, type: 3}
+  m_Name: cpu_i3_12100f
+  m_EditorClassIdentifier: 
+  id: cpu_i3_12100f
+  brand: Intel
+  model: Core i3-12100F
+  price: 550
+  description: "Quatro n\xFAcleos Intel eficientes, ideais para PCs b\xE1sicos. Sem
+    v\xEDdeo integrado."
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  socket: 3
+  tdp: 58
+  cores: 4
+  threads: 8
+  hasIntegratedGraphics: 0

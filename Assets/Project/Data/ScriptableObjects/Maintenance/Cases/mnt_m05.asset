@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f477dd39e923fb9f96cbd1477bf80ce, type: 3}
+  m_Name: mnt_m05
+  m_EditorClassIdentifier: 
+  id: mnt_m05
+  title: A imagem some do nada
+  clientComplaint: "Vit\xF3ria: \"\xC0s vezes a imagem some e o PC fica muito quente.
+    Parece que est\xE1 doente.\""
+  difficulty: 1
+  budget: 200
+  timeLimitSeconds: 420
+  motherboard: {fileID: 11400000, guid: e32256c5f16a72b2c922f74b88c1c35a, type: 2}
+  cpu: {fileID: 11400000, guid: 1db5662dc2fabfc289b3279dbe3ab8b7, type: 2}
+  ram: {fileID: 11400000, guid: 1d0c4af0664dd2b708b97d704b0ad81b, type: 2}
+  ramQuantity: 1
+  storage:
+  - {fileID: 11400000, guid: a06ee0b65b32f812ebf64298268bd8f1, type: 2}
+  gpu: {fileID: 11400000, guid: 66d1c683d36db51658ac60cd76172855, type: 2}
+  psu: {fileID: 11400000, guid: bbfc08746b67c3e39813d6258945dc88, type: 2}
+  cooler: {fileID: 11400000, guid: 362531cde0948f29e8f355ed87ee3653, type: 2}
+  defects:
+  - category: 4
+    type: 1
+    symptom: A imagem some de repente e volta depois de mexer no gabinete.
+    inspectionHint: "A placa de v\xEDdeo est\xE1 levemente solta."
+  - category: 6
+    type: 2
+    symptom: O PC esquenta e as ventoinhas aceleram o tempo todo.
+    inspectionHint: "As aletas do dissipador est\xE3o cobertas de poeira."

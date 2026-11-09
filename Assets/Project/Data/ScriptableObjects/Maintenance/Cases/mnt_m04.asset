@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f477dd39e923fb9f96cbd1477bf80ce, type: 3}
+  m_Name: mnt_m04
+  m_EditorClassIdentifier: 
+  id: mnt_m04
+  title: A montagem do primo
+  clientComplaint: "L\xFAcio: \"Meu primo montou o PC para mim e ele nunca ligou
+    direito. Ele disse que as pe\xE7as eram todas boas.\""
+  difficulty: 1
+  budget: 300
+  timeLimitSeconds: 420
+  motherboard: {fileID: 11400000, guid: 9ea5c58fe0bd2377093009556c902f14, type: 2}
+  cpu: {fileID: 11400000, guid: a3f201698b057ec63bdefe8fbb40942b, type: 2}
+  ram: {fileID: 11400000, guid: 1d0c4af0664dd2b708b97d704b0ad81b, type: 2}
+  ramQuantity: 1
+  storage:
+  - {fileID: 11400000, guid: a06ee0b65b32f812ebf64298268bd8f1, type: 2}
+  gpu: {fileID: 11400000, guid: 8d90acf8e6a1e1887b6571f99f221705, type: 2}
+  psu: {fileID: 11400000, guid: 774228d5a7943ad7c997b8257bbfa82c, type: 2}
+  cooler: {fileID: 11400000, guid: 2a34157443a30db048c574f393a977aa, type: 2}
+  defects:
+  - category: 6
+    type: 0
+    symptom: "O PC n\xE3o liga: h\xE1 uma incompatibilidade entre o cooler e a placa-m\xE3e."
+    inspectionHint: "O cooler foi feito para outros processadores e n\xE3o encaixa
+      nesse soquete."
+  - category: 2
+    type: 1
+    symptom: Mesmo depois de resolver o cooler, o PC liga e reinicia sozinho.
+    inspectionHint: "Um pente de mem\xF3ria est\xE1 torto no slot."

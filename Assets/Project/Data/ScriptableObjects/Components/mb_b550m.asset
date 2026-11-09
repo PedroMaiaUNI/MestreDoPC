@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b1b80bfdfcc2448e547b0c8d2da6f, type: 3}
+  m_Name: mb_b550m
+  m_EditorClassIdentifier: 
+  id: mb_b550m
+  brand: Gigabyte
+  model: B550M DS3H
+  price: 620
+  description: "Placa-m\xE3e AM4 mais completa, com bom suporte a processadores topo
+    de linha da plataforma."
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  socket: 0
+  chipset: B550
+  formFactor: 1
+  ramType: 0
+  ramSlots: 2
+  maxRamGB: 128

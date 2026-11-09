@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f477dd39e923fb9f96cbd1477bf80ce, type: 3}
+  m_Name: mnt_m03
+  m_EditorClassIdentifier: 
+  id: mnt_m03
+  title: Lento e com tela azul
+  clientComplaint: 'Priscila: "O PC demora uma eternidade para ligar e de vez em
+    quando aparece uma tela azul."'
+  difficulty: 1
+  budget: 400
+  timeLimitSeconds: 420
+  motherboard: {fileID: 11400000, guid: 9ea5c58fe0bd2377093009556c902f14, type: 2}
+  cpu: {fileID: 11400000, guid: b5e64b280d25f590c8b96c63979a7598, type: 2}
+  ram: {fileID: 11400000, guid: 5aacdda3e7cc565a28fe8aa094ca080b, type: 2}
+  ramQuantity: 1
+  storage:
+  - {fileID: 11400000, guid: 30c7f012734d69261bb4fa1eb9a3f5c0, type: 2}
+  gpu: {fileID: 11400000, guid: 8d90acf8e6a1e1887b6571f99f221705, type: 2}
+  psu: {fileID: 11400000, guid: 774228d5a7943ad7c997b8257bbfa82c, type: 2}
+  cooler: {fileID: 11400000, guid: e4473bb21c9ec6af78fb29364dd110a1, type: 2}
+  defects:
+  - category: 3
+    type: 0
+    symptom: O sistema demora minutos para iniciar e trava ao abrir arquivos.
+    inspectionHint: "O HD tem muitos setores ruins e est\xE1 no fim da vida."
+  - category: 2
+    type: 1
+    symptom: "Telas azuis aparecem de forma aleat\xF3ria, mesmo com o disco novo."
+    inspectionHint: "O pente de mem\xF3ria est\xE1 meio encaixado e faz mau contato."

@@ -17,3 +17,4 @@ MonoBehaviour:
   timeRange: {x: 200, y: 300}
   rankMin: 0
   rankMax: 0.15
+  performanceRange: {x: 0.82, y: 0.93}

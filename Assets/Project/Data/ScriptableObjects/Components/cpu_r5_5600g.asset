@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def4770f49b529effb20f5573918f0cb, type: 3}
+  m_Name: cpu_r5_5600g
+  m_EditorClassIdentifier: 
+  id: cpu_r5_5600g
+  brand: AMD
+  model: Ryzen 5 5600G
+  price: 850
+  description: "Seis n\xFAcleos com v\xEDdeo integrado: dispensa placa de v\xEDdeo
+    no uso b\xE1sico."
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  socket: 0
+  tdp: 65
+  cores: 6
+  threads: 12
+  hasIntegratedGraphics: 1

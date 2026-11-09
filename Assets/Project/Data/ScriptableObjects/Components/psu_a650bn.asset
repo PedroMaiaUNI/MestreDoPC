@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4571df4f84b553109ef9a0cfee5f15b, type: 3}
+  m_Name: psu_a650bn
+  m_EditorClassIdentifier: 
+  id: psu_a650bn
+  brand: MSI
+  model: MAG A650BN
+  price: 420
+  description: "Fonte de 650 W com boa folga para placas de v\xEDdeo m\xE9dias."
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  wattage: 650
+  certification: 80 Plus Bronze

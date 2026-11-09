@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24cc38b138ac178b6ccc3bd0188044, type: 3}
+  m_Name: asm_e05
+  m_EditorClassIdentifier: 
+  id: asm_e05
+  title: Setup da turma de TI
+  clientBrief: "Davi, aluno de TI: \"Vou programar, rodar m\xE1quinas virtuais e
+    fazer os laborat\xF3rios da faculdade. Quero um processador com bons n\xFAcleos.\"\n\nRequisitos:
+    RAM m\xEDn. 16 GB | armazenamento m\xEDn. 500 GB | CPU com 6+ n\xFAcleos. Or\xE7amento:
+    R$ 3,000. Tempo: 15:00."
+  mode: 0
+  difficulty: 0
+  budget: 3000
+  timeLimitSeconds: 900
+  minRamGB: 16
+  minStorageGB: 500
+  minCores: 6
+  minGpuVramGB: 0

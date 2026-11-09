@@ -7,7 +7,7 @@ namespace MestreDoPC
     public static class AIBuilder
     {
         public static PcBuild Build(ComponentDatabaseSO db, MissionDataSO mission, AIProfileSO profile,
-                                    float aiTime, int attempts = 600)
+                                    float aiTime, int minAttempts = 3000, int wanted = 30, int maxAttempts = 15000)
         {
             var cpus = db.GetAll<CpuDataSO>().ToList();
             var mobos = db.GetAll<MotherboardDataSO>().ToList();
@@ -20,11 +20,13 @@ namespace MestreDoPC
             var found = new List<(PcBuild build, int score)>();
             var seen = new HashSet<string>();
 
-            for (int i = 0; i < attempts; i++)
+            for (int i = 0; i < maxAttempts; i++)
             {
+                if (i >= minAttempts && found.Count >= wanted) break;
+
                 var b = RandomBuild(cpus, mobos, rams, storages, gpus, psus, coolers);
                 if (b == null || b.TotalPrice > mission.budget) continue;
-                if (!seen.Add(Key(b))) continue;
+                if (!seen.Add(Key(b))) continue; // não repete a mesma montagem
 
                 var report = CompatibilityChecker.Validate(b);
                 if (report.HasErrors || CompatibilityChecker.MissingParts(b).Length > 0) continue;
@@ -34,7 +36,7 @@ namespace MestreDoPC
             }
             if (found.Count == 0) return null;
 
-            found.Sort((x, y) => y.score.CompareTo(x.score)); 
+            found.Sort((x, y) => y.score.CompareTo(x.score)); // melhor primeiro
             int last = found.Count - 1;
             int lo = Mathf.FloorToInt(profile.rankMin * last);
             int hi = Mathf.Max(lo, Mathf.FloorToInt(profile.rankMax * last));
@@ -79,7 +81,6 @@ namespace MestreDoPC
                 psu = psu, cooler = cooler
             };
             b.storage.Add(storage);
-            if (Random.value < 0.3f) b.storage.Add(storage);
 
             if (!cpu.hasIntegratedGraphics || Random.value < 0.5f) b.gpu = Pick(gpus);
             return b;

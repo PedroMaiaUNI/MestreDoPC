@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24cc38b138ac178b6ccc3bd0188044, type: 3}
+  m_Name: asm_h01
+  m_EditorClassIdentifier: 
+  id: asm_h01
+  title: "Esta\xE7\xE3o de renderiza\xE7\xE3o 3D"
+  clientBrief: "Helena, animadora: \"Renderizo cenas pesadas com texturas enormes.
+    Preciso de muita RAM, 8 n\xFAcleos e uma placa de v\xEDdeo com 12 GB.\"\n\nRequisitos:
+    RAM m\xEDn. 64 GB | armazenamento m\xEDn. 1 TB | CPU com 8+ n\xFAcleos | GPU
+    com 12+ GB de VRAM. Or\xE7amento: R$ 8,800. Tempo: 6:00."
+  mode: 0
+  difficulty: 2
+  budget: 8800
+  timeLimitSeconds: 360
+  minRamGB: 64
+  minStorageGB: 1000
+  minCores: 8
+  minGpuVramGB: 12

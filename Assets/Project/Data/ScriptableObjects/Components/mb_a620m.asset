@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b1b80bfdfcc2448e547b0c8d2da6f, type: 3}
+  m_Name: mb_a620m
+  m_EditorClassIdentifier: 
+  id: mb_a620m
+  brand: ASRock
+  model: A620M-HDV
+  price: 650
+  description: "Placa-m\xE3e AM5 de entrada com mem\xF3ria DDR5."
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  socket: 1
+  chipset: A620
+  formFactor: 1
+  ramType: 1
+  ramSlots: 2
+  maxRamGB: 128

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24cc38b138ac178b6ccc3bd0188044, type: 3}
+  m_Name: ai_e03
+  m_EditorClassIdentifier: 
+  id: ai_e03
+  title: "Caf\xE9-internet"
+  clientBrief: "O caf\xE9-internet precisa de uma m\xE1quina com v\xEDdeo dedicado
+    para jogos leves. Quem entrega a melhor op\xE7\xE3o?\n\nRequisitos: RAM m\xEDn.
+    16 GB | armazenamento m\xEDn. 500 GB | CPU com 4+ n\xFAcleos | GPU com 4+ GB
+    de VRAM. Or\xE7amento: R$ 3,400. Tempo: 11:00."
+  mode: 1
+  difficulty: 0
+  budget: 3400
+  timeLimitSeconds: 660
+  minRamGB: 16
+  minStorageGB: 500
+  minCores: 4
+  minGpuVramGB: 4

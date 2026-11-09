@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24cc38b138ac178b6ccc3bd0188044, type: 3}
+  m_Name: ai_e04
+  m_EditorClassIdentifier: 
+  id: ai_e04
+  title: "Or\xE7amento apertado"
+  clientBrief: "Cada real conta! A IA Amadora vai tentar te passar a perna com pouco
+    dinheiro. Oito gigas de RAM bastam.\n\nRequisitos: RAM m\xEDn. 8 GB | armazenamento
+    m\xEDn. 500 GB | CPU com 4+ n\xFAcleos. Or\xE7amento: R$ 2,500. Tempo: 10:00."
+  mode: 1
+  difficulty: 0
+  budget: 2500
+  timeLimitSeconds: 600
+  minRamGB: 8
+  minStorageGB: 500
+  minCores: 4
+  minGpuVramGB: 0

@@ -24,6 +24,7 @@ namespace MestreDoPC
         private float aiTime;
         private List<string> steps = new List<string>();
         private bool ready, failed;
+        private float performance = 1f;
 
         private void OnEnable() => MissionSession.OnResultReady += HandlePlayerResult;
         private void OnDisable() => MissionSession.OnResultReady -= HandlePlayerResult;
@@ -48,6 +49,7 @@ namespace MestreDoPC
             var gm = GameManager.Instance;
             Difficulty diff = gm != null ? gm.CurrentDifficulty : m.difficulty;
             profile = profiles.FirstOrDefault(p => p.difficulty == diff) ?? profiles.FirstOrDefault();
+            performance = Random.Range(profile.performanceRange.x, profile.performanceRange.y);
             if (profile == null) { Fail("Nenhum AIProfile cadastrado no AIOpponentManager."); return; }
 
             aiTime = Random.Range(profile.timeRange.x, profile.timeRange.y);
@@ -93,16 +95,18 @@ namespace MestreDoPC
 
             var report = CompatibilityChecker.Validate(aiBuild);
             var ai = ScoreCalculator.Calculate(mission, aiBuild, report, aiBuild.TotalPrice, aiTime, 0);
+            int aiScore = Mathf.RoundToInt(ai.Total * performance); // erros de execução simulados do perfil
 
-            if (player.Total > ai.Total) player.headline = $"Você venceu a {profile.displayName}!";
-            else if (player.Total < ai.Total) player.headline = $"A {profile.displayName} venceu desta vez";
+            if (player.Total > aiScore) player.headline = $"Você venceu a {profile.displayName}!";
+            else if (player.Total < aiScore) player.headline = $"A {profile.displayName} venceu desta vez";
             else player.headline = "Empate!";
 
             var lines = player.detailLines;
             lines.Clear();
-            lines.Add($"Você: {player.Total} pts   |   {profile.displayName}: {ai.Total} pts");
+            lines.Add($"Você: {player.Total} pts   |   {profile.displayName}: {aiScore} pts");
             lines.Add($"Tempo: você {Fmt(player.elapsedSeconds)}   |   IA {Fmt(aiTime)}");
             lines.Add($"Montagem: você R$ {player.buildPrice:N0}   |   IA R$ {aiBuild.TotalPrice:N0}   (orçamento R$ {mission.budget:N0})");
+            lines.Add($"A IA somaria {ai.Total} pts em teoria e aproveitou {performance:P0} por erros de execução.");
             lines.Add("");
             lines.Add("Seu desempenho:");
             lines.Add($"   Compatibilidade: {player.compatibilityScore} / {ScoreCalculator.MaxCompatibility}");

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24cc38b138ac178b6ccc3bd0188044, type: 3}
+  m_Name: ai_m04
+  m_EditorClassIdentifier: 
+  id: ai_m04
+  title: Final regional de eSports
+  clientBrief: "Final regional! O PC precisa de 8 n\xFAcleos, placa de v\xEDdeo com
+    8 GB e boa quantidade de mem\xF3ria.\n\nRequisitos: RAM m\xEDn. 16 GB | armazenamento
+    m\xEDn. 500 GB | CPU com 8+ n\xFAcleos | GPU com 8+ GB de VRAM. Or\xE7amento:
+    R$ 4,600. Tempo: 7:30."
+  mode: 1
+  difficulty: 1
+  budget: 4600
+  timeLimitSeconds: 450
+  minRamGB: 16
+  minStorageGB: 500
+  minCores: 8
+  minGpuVramGB: 8

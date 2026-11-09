@@ -9,6 +9,12 @@ namespace MestreDoPC
     {
         [SerializeField] private List<MissionDataSO> missions = new List<MissionDataSO>();
 
+        public MissionDataSO Pick(GameMode mode, Difficulty difficulty)
+        {
+            var pool = missions.Where(m => m != null && m.mode == mode && m.difficulty == difficulty).ToList();
+            return MissionPicker.Pick(pool, m => m.id, $"mission/{mode}/{difficulty}");
+        }
+
         public MissionDataSO Find(GameMode mode, Difficulty difficulty)
             => missions.FirstOrDefault(m => m.mode == mode && m.difficulty == difficulty);
     }
