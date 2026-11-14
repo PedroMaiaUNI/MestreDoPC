@@ -41,5 +41,30 @@ namespace MestreDoPC
             for (int i = 1; i < rends.Length; i++) b.Encapsulate(rends[i].bounds);
             return b.size.x;
         }
+
+        public void Forget(PartView view)
+        {
+            if (!parts.Remove(view)) return;
+
+            cursorX = 0f;
+            rowIndex = 0;
+            foreach (var p in parts)
+            {
+                if (p == null) continue;
+
+                float w = WidthOf(p.gameObject);
+                if (cursorX > 0f && cursorX + w > rowWidth)
+                {
+                    cursorX = 0f;
+                    rowIndex++;
+                }
+
+                var pos = origin.position + new Vector3(-rowWidth * 0.5f + cursorX + w * 0.5f, 0f, -rowIndex * rowSpacing);
+                p.SetHomeKeepPosition(pos);
+                if (p.CurrentSlot == null) p.SendHome();
+
+                cursorX += w + gap;
+            }
+        }
     }
 }

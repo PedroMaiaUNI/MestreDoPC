@@ -126,6 +126,7 @@ namespace MestreDoPC
             }
 
             BudgetManager.Instance.TryPurchase(data.price);
+            part.PurchasePrice = data.price;
             Say($"{data.DisplayName} comprado. Pegue na bandeja.");
         }
 

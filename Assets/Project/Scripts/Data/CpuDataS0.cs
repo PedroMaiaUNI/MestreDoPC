@@ -12,6 +12,10 @@ namespace MestreDoPC
         public bool hasIntegratedGraphics;
 
         public override ComponentCategory Category => ComponentCategory.Cpu;
-        public override string SpecsSummary => $"{socket} • {cores}C/{threads}T • {tdp} W" + (hasIntegratedGraphics ? " • vídeo integrado" : "");
+        public CoolerDataSO bundledCooler;
+
+        public override string SpecsSummary => $"{socket} • {cores}C/{threads}T • {tdp} W"
+            + (hasIntegratedGraphics ? " • vídeo integrado" : "")
+            + (bundledCooler != null ? $" • inclui cooler {bundledCooler.model}" : " • sem cooler");
     }
 }

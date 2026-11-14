@@ -10,6 +10,11 @@ namespace MestreDoPC
         public PartSlot CurrentSlot { get; set; }
         public Vector3 HomePosition { get; private set; }
         public Quaternion HomeRotation { get; private set; }
+        public int PurchasePrice { get; set; } = -1;     //(-1 = peça que não foi comprada)
+        public bool IsBundled { get; set; }
+        public PartView BundledChild { get; set; }
+        public bool Sellable => PurchasePrice >= 0 && !IsBundled;
+
 
         private Renderer[] renderers;
         private Color[] baseColors;
@@ -49,5 +54,7 @@ namespace MestreDoPC
         }
 
         public int InstallCount { get; set; }
+
+        public void SetHomeKeepPosition(Vector3 position) => HomePosition = position;
     }
 }

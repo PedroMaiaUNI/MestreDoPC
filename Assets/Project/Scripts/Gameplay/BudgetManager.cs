@@ -35,5 +35,12 @@ namespace MestreDoPC
             OnChanged?.Invoke();
             return true;
         }
+
+        public void Refund(int amount)
+        {
+            Spent = Mathf.Max(0, Spent - Mathf.Max(0, amount));
+            OnChanged?.Invoke();
+        }
+
     }
 }

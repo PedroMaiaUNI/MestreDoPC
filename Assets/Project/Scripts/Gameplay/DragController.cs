@@ -42,6 +42,7 @@ namespace MestreDoPC
             if (part.CurrentSlot != null) BuildManager.Instance.Remove(part);
 
             dragged = part;
+            if (SellZone.Instance != null) SellZone.Instance.BeginDrag(part);
             grabOffset = Vector3.zero;
             if (dragPlane.Raycast(ray, out float e))
             {
@@ -66,6 +67,15 @@ namespace MestreDoPC
         private void Drop()
         {
             foreach (var s in PartSlot.All) s.SetHighlight(false);
+
+            bool overSell = SellZone.Instance != null && SellZone.Instance.Contains(Input.mousePosition);
+            if (SellZone.Instance != null) SellZone.Instance.EndDrag();
+            if (overSell)
+            {
+                if (!SellZone.Instance.TrySell(dragged)) dragged.SendHome();
+                dragged = null;
+                return;
+            }
 
             PartSlot target = FindBestSlot(dragged);
             if (target != null && BuildManager.Instance.TryInstall(target, dragged, out string msg))

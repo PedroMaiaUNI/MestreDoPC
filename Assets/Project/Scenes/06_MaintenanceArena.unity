@@ -550,7 +550,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1350907854}
   m_HandleRect: {fileID: 1350907853}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5024,6 +5024,7 @@ GameObject:
   - component: {fileID: 2009138960}
   - component: {fileID: 2009138961}
   - component: {fileID: 2009138962}
+  - component: {fileID: 2009138963}
   m_Layer: 0
   m_Name: Workshop
   m_TagString: Untagged
@@ -5185,6 +5186,21 @@ MonoBehaviour:
   moveButton: {fileID: 2072328409}
   inspectButton: {fileID: 1272492582}
   cleanButton: {fileID: 605161454}
+--- !u!114 &2009138963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009138952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2aaa5f19ad7007a7be28191b10d407b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refundPercent: 1
+  panelSize: {x: 560, y: 120}
+  bottomOffset: 150
 --- !u!1 &2051479163
 GameObject:
   m_ObjectHideFlags: 0

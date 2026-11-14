@@ -9,6 +9,8 @@ namespace MestreDoPC
         public string brand;
         public string model;
         public int price; // em reais (inteiro simplifica a soma de orçamento)
+        [Tooltip("Desmarque para itens que só vêm junto de outra peça (ex.: o cooler de fábrica de uma CPU).")]
+        public bool soldSeparately = true;    
 
         [Header("Apresentação")]
         [TextArea] public string description; // usada nas explicações do Nível 1 e no Manual
