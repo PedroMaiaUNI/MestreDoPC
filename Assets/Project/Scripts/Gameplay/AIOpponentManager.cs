@@ -100,6 +100,7 @@ namespace MestreDoPC
             if (player.Total > aiScore) player.headline = $"Você venceu a {profile.displayName}!";
             else if (player.Total < aiScore) player.headline = $"A {profile.displayName} venceu desta vez";
             else player.headline = "Empate!";
+            player.outcome = player.Total > aiScore ? 1 : (player.Total < aiScore ? -1 : 0);
 
             var lines = player.detailLines;
             lines.Clear();

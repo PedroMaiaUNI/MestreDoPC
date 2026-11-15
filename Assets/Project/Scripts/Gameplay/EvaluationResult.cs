@@ -15,6 +15,7 @@ namespace MestreDoPC
         public float elapsedSeconds;
 
         public string headline;
+        public int outcome;
         public List<string> detailLines = new List<string>();
 
         public List<string> unmetRequirements = new List<string>();

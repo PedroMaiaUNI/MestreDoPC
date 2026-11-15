@@ -274,6 +274,8 @@ namespace MestreDoPC
             r.headline = timedOut ? "Tempo esgotado: serviço não concluído"
                        : success ? "Serviço concluído!" : "Serviço incompleto";
 
+            r.outcome = success ? 1 : -1;
+
             var lines = r.detailLines;
             lines.Add($"Caso: {Case.title}");
             lines.Add($"Tempo usado: {Fmt(Elapsed)} de {Fmt(Case.timeLimitSeconds)}");
