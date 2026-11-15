@@ -170,6 +170,7 @@ MonoBehaviour:
   requiresMotherboard: 0
   snapPoint: {fileID: 0}
   hologramMaterial: {fileID: 2100000, guid: d3349dacc5e7837da96e5bf914f776e8, type: 2}
+  sataSnapPoint: {fileID: 0}
 --- !u!1 &52694129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1690,6 +1691,7 @@ MonoBehaviour:
   requiresMotherboard: 1
   snapPoint: {fileID: 0}
   hologramMaterial: {fileID: 2100000, guid: d3349dacc5e7837da96e5bf914f776e8, type: 2}
+  sataSnapPoint: {fileID: 0}
 --- !u!1 &624890799
 GameObject:
   m_ObjectHideFlags: 0
@@ -2485,6 +2487,7 @@ MonoBehaviour:
   requiresMotherboard: 1
   snapPoint: {fileID: 0}
   hologramMaterial: {fileID: 2100000, guid: d3349dacc5e7837da96e5bf914f776e8, type: 2}
+  sataSnapPoint: {fileID: 0}
 --- !u!1 &1247277075
 GameObject:
   m_ObjectHideFlags: 0
@@ -2900,6 +2903,7 @@ Transform:
   - {fileID: 1871066919}
   - {fileID: 2145178588}
   - {fileID: 14318992}
+  - {fileID: 1678730984}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1613934681
@@ -3177,6 +3181,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   briefText: {fileID: 577509938}
   timerText: {fileID: 1920458599}
+--- !u!1 &1678730983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1678730984}
+  m_Layer: 0
+  m_Name: SataSnap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1678730984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678730983}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1, y: 0.06, z: 0.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1497519127}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1835249095
 GameObject:
   m_ObjectHideFlags: 0
@@ -3225,6 +3260,7 @@ MonoBehaviour:
   requiresMotherboard: 0
   snapPoint: {fileID: 0}
   hologramMaterial: {fileID: 2100000, guid: d3349dacc5e7837da96e5bf914f776e8, type: 2}
+  sataSnapPoint: {fileID: 0}
 --- !u!1 &1855015954
 GameObject:
   m_ObjectHideFlags: 0
@@ -3273,6 +3309,7 @@ MonoBehaviour:
   requiresMotherboard: 1
   snapPoint: {fileID: 0}
   hologramMaterial: {fileID: 2100000, guid: d3349dacc5e7837da96e5bf914f776e8, type: 2}
+  sataSnapPoint: {fileID: 0}
 --- !u!1 &1871066918
 GameObject:
   m_ObjectHideFlags: 0
@@ -3321,6 +3358,7 @@ MonoBehaviour:
   requiresMotherboard: 1
   snapPoint: {fileID: 0}
   hologramMaterial: {fileID: 2100000, guid: d3349dacc5e7837da96e5bf914f776e8, type: 2}
+  sataSnapPoint: {fileID: 0}
 --- !u!1 &1920458598
 GameObject:
   m_ObjectHideFlags: 0
@@ -3637,6 +3675,7 @@ MonoBehaviour:
   requiresMotherboard: 1
   snapPoint: {fileID: 0}
   hologramMaterial: {fileID: 2100000, guid: d3349dacc5e7837da96e5bf914f776e8, type: 2}
+  sataSnapPoint: {fileID: 0}
 --- !u!1 &2009138952
 GameObject:
   m_ObjectHideFlags: 0
@@ -4051,7 +4090,7 @@ Transform:
   m_GameObject: {fileID: 2145178587}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1, y: 0.06, z: 0.3}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4070,9 +4109,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   category: 3
-  requiresMotherboard: 0
+  requiresMotherboard: 1
   snapPoint: {fileID: 0}
   hologramMaterial: {fileID: 2100000, guid: d3349dacc5e7837da96e5bf914f776e8, type: 2}
+  sataSnapPoint: {fileID: 1678730984}
 --- !u!1001 &3066915892617988501
 PrefabInstance:
   m_ObjectHideFlags: 0

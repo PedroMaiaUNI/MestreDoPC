@@ -16,6 +16,7 @@ MonoBehaviour:
   brand: AMD
   model: Stock AMD Wraith
   price: 0
+  soldSeparately: 0
   description: 
   icon: {fileID: 0}
   prefab: {fileID: 0}

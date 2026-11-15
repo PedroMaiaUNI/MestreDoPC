@@ -16,6 +16,7 @@ MonoBehaviour:
   brand: AMD
   model: Ryzen 3 4100
   price: 450
+  soldSeparately: 1
   description: "Quatro n\xFAcleos econ\xF4micos para tarefas b\xE1sicas. Sem v\xEDdeo
     integrado."
   icon: {fileID: 0}
@@ -25,3 +26,4 @@ MonoBehaviour:
   cores: 4
   threads: 8
   hasIntegratedGraphics: 0
+  bundledCooler: {fileID: 11400000, guid: 362531cde0948f29e8f355ed87ee3653, type: 2}

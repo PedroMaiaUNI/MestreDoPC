@@ -24,6 +24,7 @@ namespace MestreDoPC
             else
             {
                 go = CreateVisual(data.Category);
+                if (data is StorageDataSO st && st.type == StorageType.NVMe) go.transform.localScale = NvmeScale;
                 go.transform.SetPositionAndRotation(position, rotation);
             }
 
@@ -39,6 +40,8 @@ namespace MestreDoPC
             view.Init(data, position, rotation);
             return view;
         }
+
+        public static readonly Vector3 NvmeScale = new Vector3(0.24f, 0.03f, 0.08f);
 
         private static Vector3 ScaleOf(ComponentCategory c) => c switch
         {

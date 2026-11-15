@@ -16,6 +16,7 @@ MonoBehaviour:
   brand: AMD
   model: Wraith Stealth
   price: 0
+  soldSeparately: 0
   description: "Cooler que acompanha CPUs AM4. S\xF3 aguenta processadores leves."
   icon: {fileID: 0}
   prefab: {fileID: 0}

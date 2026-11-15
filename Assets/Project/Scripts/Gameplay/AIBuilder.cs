@@ -69,7 +69,10 @@ namespace MestreDoPC
             if (mb == null) return null;
 
             var ram = Pick(rams.Where(r => r.type == mb.ramType).ToList());
-            var cooler = Pick(coolers.Where(c => c.supportedSockets != null && c.supportedSockets.Contains(cpu.socket)).ToList());
+            var coolerOptions = coolers.Where(c => c.soldSeparately && c.supportedSockets != null &&
+                                       c.supportedSockets.Contains(cpu.socket)).ToList();
+            if (cpu.bundledCooler != null) coolerOptions.Add(cpu.bundledCooler);
+            var cooler = Pick(coolerOptions);
             var storage = Pick(storages);
             var psu = Pick(psus);
             if (ram == null || cooler == null || storage == null || psu == null) return null;

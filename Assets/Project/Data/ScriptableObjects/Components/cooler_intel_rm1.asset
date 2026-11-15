@@ -16,6 +16,7 @@ MonoBehaviour:
   brand: Intel
   model: Laminar RM1
   price: 0
+  soldSeparately: 0
   description: Cooler original dos processadores Intel LGA1700.
   icon: {fileID: 0}
   prefab: {fileID: 0}

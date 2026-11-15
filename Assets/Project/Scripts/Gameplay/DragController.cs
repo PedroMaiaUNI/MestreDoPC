@@ -51,7 +51,7 @@ namespace MestreDoPC
             }
 
             foreach (var s in PartSlot.All)
-                s.SetHighlight(s.category == part.Data.Category);
+                s.SetHighlight(s.category == part.Data.Category, part);
         }
 
         private void Drag()
@@ -104,7 +104,7 @@ namespace MestreDoPC
 
             foreach (var s in PartSlot.All)
             {
-                var sp = s.snapPoint.position;
+                var sp = s.SnapFor(part).position;
                 float d = Vector2.Distance(new Vector2(p.x, p.z), new Vector2(sp.x, sp.z));
                 if (d > snapDistance) continue;
 

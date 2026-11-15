@@ -23,7 +23,7 @@ namespace MestreDoPC
             if (slot.Installed != null)
             { reason = "Esse slot já está ocupado."; return false; }
 
-            if (slot.requiresMotherboard && !HasInstalled<MotherboardDataSO>())
+            if (slot.RequiresMotherboardFor(part) && !HasInstalled<MotherboardDataSO>())
             { reason = "Instale a placa-mãe primeiro."; return false; }
 
             if (part.Data is RamDataSO ram)
@@ -88,7 +88,7 @@ namespace MestreDoPC
             {
                 foreach (var s in PartSlot.All)
                 {
-                    if (!s.requiresMotherboard || s.Installed == null) continue;
+                    if (s.Installed == null || !s.RequiresMotherboardFor(s.Installed)) continue;
                     var dependent = s.Installed;
                     s.Clear();
                     dependent.SetFeedback(PartFeedback.None);

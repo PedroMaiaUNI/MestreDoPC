@@ -92,7 +92,7 @@ namespace MestreDoPC
             foreach (var kv in tabs)
                 kv.Value.image.color = kv.Key == category ? TabSelected : TabNormal;
 
-            var items = database.GetByCategory(category).OrderBy(d => d.price).ToList();
+            var items = database.GetByCategory(category).Where(d => d.soldSeparately).OrderBy(d => d.price).ToList();
             foreach (var data in items)
             {
                 var card = Instantiate(cardPrefab, itemContainer);
@@ -118,16 +118,30 @@ namespace MestreDoPC
                 return;
             }
 
-            var part = TrayManager.Instance.Spawn(data);   // se falhar, não debita
+            var part = TrayManager.Instance.Spawn(data);
             if (part == null)
             {
                 Say("Não foi possível criar a peça (veja o Console).");
                 return;
             }
 
-            BudgetManager.Instance.TryPurchase(data.price);
             part.PurchasePrice = data.price;
-            Say($"{data.DisplayName} comprado. Pegue na bandeja.");
+            BudgetManager.Instance.TryPurchase(data.price);
+
+            string extra = "";
+            if (data is CpuDataSO cpu && cpu.bundledCooler != null)
+            {
+                var gift = TrayManager.Instance.Spawn(cpu.bundledCooler);
+                if (gift != null)
+                {
+                    gift.IsBundled = true;
+                    gift.PurchasePrice = 0;
+                    part.BundledChild = gift;              // sai junto se a CPU for devolvida
+                    extra = $" Acompanha: {cpu.bundledCooler.DisplayName}.";
+                }
+            }
+
+            Say($"{data.DisplayName} comprado.{extra} Comprou sem querer? Pegue a peça e solte em Devolver.");
         }
 
         private static void Say(string message)
