@@ -16,6 +16,7 @@ MonoBehaviour:
   brand: AMD
   model: Ryzen 5 5600G
   price: 850
+  soldSeparately: 1
   description: "Seis n\xFAcleos com v\xEDdeo integrado: dispensa placa de v\xEDdeo
     no uso b\xE1sico."
   icon: {fileID: 0}
@@ -25,3 +26,4 @@ MonoBehaviour:
   cores: 6
   threads: 12
   hasIntegratedGraphics: 1
+  bundledCooler: {fileID: 11400000, guid: 362531cde0948f29e8f355ed87ee3653, type: 2}

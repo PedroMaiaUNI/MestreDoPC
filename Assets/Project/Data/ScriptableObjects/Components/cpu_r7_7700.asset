@@ -16,6 +16,7 @@ MonoBehaviour:
   brand: AMD
   model: Ryzen 7 7700
   price: 1650
+  soldSeparately: 1
   description: "Oito n\xFAcleos modernos (AM5) com v\xEDdeo integrado b\xE1sico."
   icon: {fileID: 0}
   prefab: {fileID: 0}
@@ -24,3 +25,4 @@ MonoBehaviour:
   cores: 8
   threads: 16
   hasIntegratedGraphics: 1
+  bundledCooler: {fileID: 11400000, guid: 08c02b0967a7bd48f97aea2ca7e787c4, type: 2}

@@ -16,6 +16,7 @@ MonoBehaviour:
   brand: Intel
   model: Core i5-12400F
   price: 800
+  soldSeparately: 1
   description: "Seis n\xFAcleos Intel para jogos e trabalho. Sem v\xEDdeo integrado."
   icon: {fileID: 0}
   prefab: {fileID: 0}
@@ -24,3 +25,4 @@ MonoBehaviour:
   cores: 6
   threads: 12
   hasIntegratedGraphics: 0
+  bundledCooler: {fileID: 11400000, guid: e4473bb21c9ec6af78fb29364dd110a1, type: 2}

@@ -64,11 +64,11 @@ namespace MestreDoPC.EditorTools
         }
     }
 
-    // Garante as 41 peças do pacote (reaproveita as que já existem, pelo id) e as coloca no ComponentDatabase.
+    // Garante as 42 peças do pacote (reaproveita as que já existem, pelo id) e as coloca no ComponentDatabase.
     public static class PartsPackGenerator
     {
-        public const string PartsFolder = "Assets/Project/Data/ScriptableObjects/Components";
-        public const string DbPath = "Assets/Project/Data/ScriptableObjects/ComponentDatabase.asset";
+        public const string PartsFolder = "Assets/_Project/Data/ScriptableObjects/Components";
+        public const string DbPath = "Assets/_Project/Data/ScriptableObjects/ComponentDatabase.asset";
 
         [MenuItem("Tools/MestreDoPC/Pacote de missões/1 - Gerar pacote de peças")]
         public static void Generate()
@@ -164,11 +164,14 @@ namespace MestreDoPC.EditorTools
             AddPsu("psu_a650bn", "MSI", "MAG A650BN", 420, 650, "80 Plus Bronze", "Fonte de 650 W com boa folga para placas de vídeo médias.");
             AddPsu("psu_rm750", "Corsair", "RM750", 700, 750, "80 Plus Gold", "Fonte de 750 W modular, com bastante folga.");
             AddPsu("psu_rm850e", "Corsair", "RM850e", 900, 850, "80 Plus Gold", "Fonte de 850 W modular para configurações exigentes.");
-            AddCooler("cooler_wraith", "AMD", "Wraith Stealth", 0, CoolerType.Air, new[] { SocketType.AM4 }, 65, "Cooler que acompanha CPUs AM4. Só aguenta processadores leves.");
+            AddCooler("cooler_wraith", "AMD", "Wraith Stealth", 0, CoolerType.Air, new[] { SocketType.AM4, SocketType.AM5 }, 65, "Cooler que acompanha CPUs AMD (AM4 e AM5). Só aguenta processadores leves.");
+            AddCooler("cooler_wraith_prism", "AMD", "Wraith Prism", 0, CoolerType.Air, new[] { SocketType.AM4, SocketType.AM5 }, 105, "Cooler que acompanha o Ryzen 7: mais robusto que o Wraith Stealth.");
             AddCooler("cooler_intel_rm1", "Intel", "Laminar RM1", 0, CoolerType.Air, new[] { SocketType.LGA1700 }, 65, "Cooler original dos processadores Intel LGA1700.");
             AddCooler("cooler_ag400", "DeepCool", "AG400", 160, CoolerType.Air, new[] { SocketType.AM4, SocketType.AM5, SocketType.LGA1700 }, 220, "Cooler a ar eficiente, compatível com AM4, AM5 e LGA1700.");
             AddCooler("cooler_hyper212", "Cooler Master", "Hyper 212", 200, CoolerType.Air, new[] { SocketType.AM4, SocketType.AM5 }, 150, "Cooler a ar para AM4 e AM5.");
             AddCooler("cooler_h100i", "Corsair", "iCUE H100i", 850, CoolerType.Liquid, new[] { SocketType.AM4, SocketType.AM5, SocketType.LGA1700 }, 300, "Water cooler de 240 mm, silencioso e potente.");
+
+            int factory = ApplyFactoryCoolers(existing);
 
             var db = PackUtil.FindOrCreate<ComponentDatabaseSO>(DbPath);
             int added = PackUtil.AddToList(db, "components", all);
@@ -177,7 +180,61 @@ namespace MestreDoPC.EditorTools
             Selection.activeObject = db;
             EditorGUIUtility.PingObject(db);
             Debug.Log($"[Pacote] Peças do pacote: {all.Count} (criadas agora: {created}). " +
-                      $"Adicionadas ao ComponentDatabase: {added}.");
+                      $"Adicionadas ao ComponentDatabase: {added}. " +
+                      $"Coolers de fábrica ajustados: {factory}.");
+        }
+
+        // Coolers que só existem como brinde de CPU (não aparecem na Loja) e a CPU que traz cada um.
+        private static readonly string[] StockCoolers = { "cooler_wraith", "cooler_wraith_prism", "cooler_intel_rm1" };
+
+        private static readonly Dictionary<string, string> FactoryBundles = new Dictionary<string, string>
+        {
+            { "cpu_r3_4100", "cooler_wraith" },
+            { "cpu_r5_5600", "cooler_wraith" },
+            { "cpu_r5_5600g", "cooler_wraith" },
+            { "cpu_r5_7600", "cooler_wraith" },
+            { "cpu_r5_8500g", "cooler_wraith" },
+            { "cpu_r7_7700", "cooler_wraith_prism" },
+            { "cpu_i3_12100f", "cooler_intel_rm1" },
+            { "cpu_i5_12400f", "cooler_intel_rm1" },
+            { "cpu_i7_12700f", "cooler_intel_rm1" },
+            // cpu_r7_5700x não traz cooler: é preciso comprar um.
+        };
+
+        // Idempotente: marca os coolers de fábrica como "não vendidos separadamente" e liga cada CPU ao seu cooler.
+        private static int ApplyFactoryCoolers(Dictionary<string, ComponentDataSO> parts)
+        {
+            int changed = 0;
+
+            foreach (var id in StockCoolers)
+            {
+                if (!parts.TryGetValue(id, out var p) || !(p is CoolerDataSO cooler)) continue;
+
+                bool dirty = false;
+                if (cooler.soldSeparately) { cooler.soldSeparately = false; dirty = true; }
+
+                // O Wraith serve em AM4 e AM5.
+                if (id.StartsWith("cooler_wraith") &&
+                    (cooler.supportedSockets == null || !cooler.supportedSockets.Contains(SocketType.AM5)))
+                {
+                    cooler.supportedSockets = new[] { SocketType.AM4, SocketType.AM5 };
+                    dirty = true;
+                }
+
+                if (dirty) { EditorUtility.SetDirty(cooler); changed++; }
+            }
+
+            foreach (var kv in FactoryBundles)
+            {
+                if (parts.TryGetValue(kv.Key, out var c) && c is CpuDataSO cpu &&
+                    parts.TryGetValue(kv.Value, out var k) && k is CoolerDataSO cooler && cpu.bundledCooler != cooler)
+                {
+                    cpu.bundledCooler = cooler;
+                    EditorUtility.SetDirty(cpu);
+                    changed++;
+                }
+            }
+            return changed;
         }
     }
 }

@@ -16,6 +16,7 @@ MonoBehaviour:
   brand: Intel
   model: Core i7-12700F
   price: 1500
+  soldSeparately: 1
   description: "Doze n\xFAcleos Intel para cria\xE7\xE3o e cargas pesadas. Sem v\xEDdeo
     integrado."
   icon: {fileID: 0}
@@ -25,3 +26,4 @@ MonoBehaviour:
   cores: 12
   threads: 20
   hasIntegratedGraphics: 0
+  bundledCooler: {fileID: 11400000, guid: e4473bb21c9ec6af78fb29364dd110a1, type: 2}

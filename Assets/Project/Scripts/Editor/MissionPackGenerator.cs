@@ -12,7 +12,7 @@ namespace MestreDoPC.EditorTools
     // Rode ANTES o menu "1 - Gerar pacote de peças". Não sobrescreve assets que já existem.
     public static class MissionPackGenerator
     {
-        private const string Root = "Assets/Project/Data/ScriptableObjects";
+        private const string Root = "Assets/_Project/Data/ScriptableObjects";
         private const string AssemblyFolder = Root + "/Missions/Assembly";
         private const string AIFolder = Root + "/Missions/AIChallenge";
         private const string CasesFolder = Root + "/Maintenance/Cases";
@@ -388,20 +388,23 @@ namespace MestreDoPC.EditorTools
             var gpus = new List<GpuDataSO> { null };
             gpus.AddRange(parts.OfType<GpuDataSO>());
             var psus = parts.OfType<PsuDataSO>().ToList();
-            var coolers = parts.OfType<CoolerDataSO>().ToList();
+            var coolers = parts.OfType<CoolerDataSO>().Where(c => c.soldSeparately).ToList();
 
             var result = new List<PcBuild>();
             for (int i = 0; i < cpus.Count; i++)
             {
                 EditorUtility.DisplayProgressBar("Validando missões", "Enumerando montagens...", (float)i / cpus.Count);
                 var cpu = cpus[i];
+                // cooler vendido separadamente + o cooler de fábrica desta CPU (se houver)
+                var coolerOptions = new List<CoolerDataSO>(coolers);
+                if (cpu.bundledCooler != null) coolerOptions.Add(cpu.bundledCooler);
                 foreach (var mb in mobos.Where(m => m.socket == cpu.socket))
                 foreach (var ram in rams.Where(r => r.type == mb.ramType))
                 for (int qty = 1; qty <= Mathf.Min(2, mb.ramSlots); qty++)
                 foreach (var sto in storages)
                 foreach (var gpu in gpus)
                 foreach (var psu in psus)
-                foreach (var cooler in coolers)
+                foreach (var cooler in coolerOptions)
                 {
                     var b = new PcBuild { motherboard = mb, cpu = cpu, ram = ram, ramQuantity = qty, gpu = gpu, psu = psu, cooler = cooler };
                     b.storage.Add(sto);
@@ -451,7 +454,7 @@ namespace MestreDoPC.EditorTools
                 }
 
                 var cat = failed[index];
-                foreach (var option in parts.Where(p => p.Category == cat))
+                foreach (var option in parts.Where(p => p.Category == cat && p.soldSeparately))
                 {
                     // Com 2 módulos de RAM, o novo módulo precisa ser igual ao que ficou no PC.
                     if (cat == ComponentCategory.Ram && initial.ramQuantity == 2 && option != initial.ram) continue;

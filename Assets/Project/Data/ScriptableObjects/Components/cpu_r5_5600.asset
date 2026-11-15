@@ -16,6 +16,7 @@ MonoBehaviour:
   brand: AMD
   model: Ryzen 5 5600
   price: 800
+  soldSeparately: 1
   description: "Seis n\xFAcleos para jogos e multitarefa. N\xE3o tem v\xEDdeo integrado."
   icon: {fileID: 0}
   prefab: {fileID: 0}
@@ -24,3 +25,4 @@ MonoBehaviour:
   cores: 6
   threads: 12
   hasIntegratedGraphics: 0
+  bundledCooler: {fileID: 11400000, guid: 362531cde0948f29e8f355ed87ee3653, type: 2}

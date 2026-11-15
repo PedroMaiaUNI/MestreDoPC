@@ -16,6 +16,7 @@ MonoBehaviour:
   brand: Intel
   model: Core i3-12100F
   price: 550
+  soldSeparately: 1
   description: "Quatro n\xFAcleos Intel eficientes, ideais para PCs b\xE1sicos. Sem
     v\xEDdeo integrado."
   icon: {fileID: 0}
@@ -25,3 +26,4 @@ MonoBehaviour:
   cores: 4
   threads: 8
   hasIntegratedGraphics: 0
+  bundledCooler: {fileID: 11400000, guid: e4473bb21c9ec6af78fb29364dd110a1, type: 2}

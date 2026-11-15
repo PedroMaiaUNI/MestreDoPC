@@ -16,6 +16,7 @@ MonoBehaviour:
   brand: AMD
   model: Ryzen 5 7600
   price: 1150
+  soldSeparately: 1
   description: "Seis n\xFAcleos modernos (AM5) com v\xEDdeo integrado b\xE1sico."
   icon: {fileID: 0}
   prefab: {fileID: 0}
@@ -24,3 +25,4 @@ MonoBehaviour:
   cores: 6
   threads: 12
   hasIntegratedGraphics: 1
+  bundledCooler: {fileID: 11400000, guid: 362531cde0948f29e8f355ed87ee3653, type: 2}
