@@ -553,7 +553,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1804715904}
         m_TargetAssemblyTypeName: MestreDoPC.OptionsController, Assembly-CSharp
-        m_MethodName: ShowOptions
+        m_MethodName: OnMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

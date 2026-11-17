@@ -961,7 +961,7 @@ GameObject:
   - component: {fileID: 644901254}
   - component: {fileID: 644901253}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: RecordsPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1423,9 +1423,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MestreDoPC.MainMenuController, Assembly-CSharp
-        m_MethodName: OnOptions
+      - m_Target: {fileID: 1430373109}
+        m_TargetAssemblyTypeName: MestreDoPC.RecordsController, Assembly-CSharp
+        m_MethodName: OnMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2252,6 +2252,7 @@ GameObject:
   - component: {fileID: 1430373107}
   - component: {fileID: 1430373106}
   - component: {fileID: 1430373105}
+  - component: {fileID: 1430373109}
   m_Layer: 5
   m_Name: RecordsCanvas
   m_TagString: Untagged
@@ -2342,6 +2343,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1430373109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430373104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fcf37537a806764f8c86f317a6acafd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecordsPanel: {fileID: 644901251}
 --- !u!1 &1491078963
 GameObject:
   m_ObjectHideFlags: 0

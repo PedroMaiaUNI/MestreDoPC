@@ -248,7 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 2070676322}
   progressBar: {fileID: 387886573}
-  fadeDuration: 5
+  fadeDuration: 0.5
 --- !u!114 &115179618
 MonoBehaviour:
   m_ObjectHideFlags: 0
