@@ -35,10 +35,25 @@ namespace MestreDoPC
         public GpuDataSO gpu;
         public PsuDataSO psu;
         public CoolerDataSO cooler;
+        public bool UsesIntegratedGraphics => gpu == null && cpu != null && cpu.hasIntegratedGraphics;
+        public bool HasVideoOutput => gpu != null || UsesIntegratedGraphics;
+        public int VideoMemoryGB => gpu != null ? gpu.vramGB : (UsesIntegratedGraphics ? cpu.integratedVramGB : 0);
 
         public int TotalPrice =>
             (motherboard ? motherboard.price : 0) + (cpu ? cpu.price : 0) +
             (ram ? ram.price * ramQuantity : 0) + storage.Sum(s => s.price) +
             (gpu ? gpu.price : 0) + (psu ? psu.price : 0) + (cooler ? cooler.price : 0);
+
+
+        public string VideoDescription
+        {
+            get
+            {
+                if (gpu != null) return gpu.DisplayName;
+                if (UsesIntegratedGraphics)
+                    return string.IsNullOrEmpty(cpu.integratedGpuName) ? "Gráficos integrados" : $"{cpu.integratedGpuName} (integrado)";
+                return null;
+            }
+        }
     }
 }

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def4770f49b529effb20f5573918f0cb, type: 3}
+  m_Name: cpu_i3_12100
+  m_EditorClassIdentifier: 
+  id: cpu_i3_12100
+  brand: Intel
+  model: Core i3-12100
+  price: 700
+  soldSeparately: 1
+  description: "Quatro n\xFAcleos Intel com v\xEDdeo integrado UHD 730: dispensa
+    placa de v\xEDdeo no uso b\xE1sico."
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
+  socket: 3
+  tdp: 60
+  cores: 4
+  threads: 8
+  hasIntegratedGraphics: 1
+  bundledCooler: {fileID: 11400000, guid: e4473bb21c9ec6af78fb29364dd110a1, type: 2}
+  integratedGpuName: UHD Graphics 730
+  integratedVramGB: 1

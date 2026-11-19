@@ -64,7 +64,7 @@ namespace MestreDoPC.EditorTools
         }
     }
 
-    // Garante as 42 peças do pacote (reaproveita as que já existem, pelo id) e as coloca no ComponentDatabase.
+    // Garante as 44 peças do pacote (reaproveita as que já existem, pelo id) e as coloca no ComponentDatabase.
     public static class PartsPackGenerator
     {
         public const string PartsFolder = "Assets/_Project/Data/ScriptableObjects/Components";
@@ -144,6 +144,8 @@ namespace MestreDoPC.EditorTools
             AddCpu("cpu_i3_12100f", "Intel", "Core i3-12100F", 550, SocketType.LGA1700, 58, 4, 8, false, "Quatro núcleos Intel eficientes, ideais para PCs básicos. Sem vídeo integrado.");
             AddCpu("cpu_i5_12400f", "Intel", "Core i5-12400F", 800, SocketType.LGA1700, 65, 6, 12, false, "Seis núcleos Intel para jogos e trabalho. Sem vídeo integrado.");
             AddCpu("cpu_i7_12700f", "Intel", "Core i7-12700F", 1500, SocketType.LGA1700, 65, 12, 20, false, "Doze núcleos Intel para criação e cargas pesadas. Sem vídeo integrado.");
+            AddCpu("cpu_i3_12100", "Intel", "Core i3-12100", 700, SocketType.LGA1700, 60, 4, 8, true, "Quatro núcleos Intel com vídeo integrado UHD 730: dispensa placa de vídeo no uso básico.");
+            AddCpu("cpu_i5_12400", "Intel", "Core i5-12400", 950, SocketType.LGA1700, 65, 6, 12, true, "Seis núcleos Intel com vídeo integrado UHD 730, bom para quem não precisa de placa de vídeo.");
             AddRam("ram_fury8_ddr4", "Kingston", "Fury 8GB DDR4", 150, RamType.DDR4, 8, 3200, "Módulo de 8 GB DDR4 3200 MHz.");
             AddRam("ram_fury16_ddr4", "Kingston", "Fury 16GB DDR4", 280, RamType.DDR4, 16, 3200, "Módulo de 16 GB DDR4 3200 MHz.");
             AddRam("ram_fury16_ddr5", "Kingston", "Fury 16GB DDR5", 350, RamType.DDR5, 16, 5600, "Módulo de 16 GB DDR5 5600 MHz.");
@@ -172,6 +174,7 @@ namespace MestreDoPC.EditorTools
             AddCooler("cooler_h100i", "Corsair", "iCUE H100i", 850, CoolerType.Liquid, new[] { SocketType.AM4, SocketType.AM5, SocketType.LGA1700 }, 300, "Water cooler de 240 mm, silencioso e potente.");
 
             int factory = ApplyFactoryCoolers(existing);
+            int video = ApplyIntegratedGraphics(existing);
 
             var db = PackUtil.FindOrCreate<ComponentDatabaseSO>(DbPath);
             int added = PackUtil.AddToList(db, "components", all);
@@ -181,7 +184,7 @@ namespace MestreDoPC.EditorTools
             EditorGUIUtility.PingObject(db);
             Debug.Log($"[Pacote] Peças do pacote: {all.Count} (criadas agora: {created}). " +
                       $"Adicionadas ao ComponentDatabase: {added}. " +
-                      $"Coolers de fábrica ajustados: {factory}.");
+                      $"Coolers de fábrica ajustados: {factory}. Vídeo integrado ajustado: {video}.");
         }
 
         // Coolers que só existem como brinde de CPU (não aparecem na Loja) e a CPU que traz cada um.
@@ -198,6 +201,8 @@ namespace MestreDoPC.EditorTools
             { "cpu_i3_12100f", "cooler_intel_rm1" },
             { "cpu_i5_12400f", "cooler_intel_rm1" },
             { "cpu_i7_12700f", "cooler_intel_rm1" },
+            { "cpu_i3_12100", "cooler_intel_rm1" },
+            { "cpu_i5_12400", "cooler_intel_rm1" },
             // cpu_r7_5700x não traz cooler: é preciso comprar um.
         };
 
@@ -233,6 +238,38 @@ namespace MestreDoPC.EditorTools
                     EditorUtility.SetDirty(cpu);
                     changed++;
                 }
+            }
+            return changed;
+        }
+
+        // Gráficos integrados de cada CPU: nome e memória de vídeo efetiva (compartilhada com a RAM).
+        private static readonly Dictionary<string, (string name, int vram)> IntegratedGraphics =
+            new Dictionary<string, (string name, int vram)>
+        {
+            { "cpu_r5_5600g",  ("Radeon Vega 7", 2) },
+            { "cpu_r5_7600",   ("Radeon Graphics (RDNA 2)", 1) },
+            { "cpu_r5_8500g",  ("Radeon 740M", 2) },
+            { "cpu_r7_7700",   ("Radeon Graphics (RDNA 2)", 1) },
+            { "cpu_i3_12100",  ("UHD Graphics 730", 1) },
+            { "cpu_i5_12400",  ("UHD Graphics 730", 1) },
+        };
+
+        // Idempotente: preenche nome e memória de vídeo das CPUs que têm vídeo integrado (peças novas e já existentes).
+        private static int ApplyIntegratedGraphics(Dictionary<string, ComponentDataSO> parts)
+        {
+            int changed = 0;
+            foreach (var kv in IntegratedGraphics)
+            {
+                if (!parts.TryGetValue(kv.Key, out var p) || !(p is CpuDataSO cpu)) continue;
+
+                if (cpu.hasIntegratedGraphics && cpu.integratedGpuName == kv.Value.name &&
+                    cpu.integratedVramGB == kv.Value.vram) continue;
+
+                cpu.hasIntegratedGraphics = true;
+                cpu.integratedGpuName = kv.Value.name;
+                cpu.integratedVramGB = kv.Value.vram;
+                EditorUtility.SetDirty(cpu);
+                changed++;
             }
             return changed;
         }

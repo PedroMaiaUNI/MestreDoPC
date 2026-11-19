@@ -63,7 +63,7 @@ namespace MestreDoPC
             if (b.psu == null) missing.Add("Fonte");
             if (b.cooler == null) missing.Add("Cooler");
             // GPU só é obrigatória se a CPU não tiver vídeo integrado.
-            if (b.gpu == null && (b.cpu == null || !b.cpu.hasIntegratedGraphics)) missing.Add("GPU");
+            if (b.gpu == null && (b.cpu == null || !b.cpu.hasIntegratedGraphics)) missing.Add("GPU (ou CPU com vídeo integrado)");
             return missing.ToArray();
         }
     }

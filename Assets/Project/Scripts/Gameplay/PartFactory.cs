@@ -38,7 +38,20 @@ namespace MestreDoPC
 
             var view = go.AddComponent<PartView>();
             view.Init(data, position, rotation);
+            if (data.prefab == null && data is CpuDataSO cpuData && cpuData.hasIntegratedGraphics)
+                AddIntegratedGraphicsBadge(go.transform);
             return view;
+        }
+
+        private static void AddIntegratedGraphicsBadge(Transform cpu)
+        {
+            var badge = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            badge.name = "iGPU Badge";
+            Object.Destroy(badge.GetComponent<Collider>());   // não atrapalha o clique na CPU
+            badge.transform.SetParent(cpu, false);
+            badge.transform.localPosition = new Vector3(0.28f, 0.75f, 0.28f);
+            badge.transform.localScale = new Vector3(0.3f, 0.5f, 0.3f);
+            badge.GetComponent<Renderer>().material.color = new Color(0.25f, 0.9f, 1f);
         }
 
         public static readonly Vector3 NvmeScale = new Vector3(0.24f, 0.03f, 0.08f);

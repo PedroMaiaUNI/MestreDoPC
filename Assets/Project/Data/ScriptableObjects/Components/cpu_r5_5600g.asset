@@ -27,3 +27,5 @@ MonoBehaviour:
   threads: 12
   hasIntegratedGraphics: 1
   bundledCooler: {fileID: 11400000, guid: 362531cde0948f29e8f355ed87ee3653, type: 2}
+  integratedGpuName: Radeon Vega 7
+  integratedVramGB: 2

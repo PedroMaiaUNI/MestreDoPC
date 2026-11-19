@@ -222,7 +222,7 @@ namespace MestreDoPC.EditorTools
             if (d.ram > 0) req.Add($"RAM mín. {d.ram} GB");
             if (d.storage > 0) req.Add(d.storage >= 1000 ? $"armazenamento mín. {d.storage / 1000f:0.#} TB" : $"armazenamento mín. {d.storage} GB");
             if (d.cores > 0) req.Add($"CPU com {d.cores}+ núcleos");
-            if (d.vram > 0) req.Add($"GPU com {d.vram}+ GB de VRAM");
+            if (d.vram > 0) req.Add($"vídeo com {d.vram}+ GB de memória de vídeo");
 
             string time = d.time > 0 ? $" Tempo: {d.time / 60}:{d.time % 60:00}." : "";
             return $"{d.brief}\n\nRequisitos: {string.Join(" | ", req)}. Orçamento: R$ {d.budget:N0}.{time}";
@@ -374,7 +374,7 @@ namespace MestreDoPC.EditorTools
             int ram = b.ram != null ? b.ram.capacityGB * b.ramQuantity : 0;
             int storage = b.storage.Sum(s => s.capacityGB);
             int cores = b.cpu != null ? b.cpu.cores : 0;
-            int vram = b.gpu != null ? b.gpu.vramGB : 0;
+            int vram = b.VideoMemoryGB;
             return ram >= m.minRamGB && storage >= m.minStorageGB && cores >= m.minCores && vram >= m.minGpuVramGB;
         }
 

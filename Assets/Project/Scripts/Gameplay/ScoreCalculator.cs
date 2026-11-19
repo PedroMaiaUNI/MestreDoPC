@@ -68,7 +68,7 @@ namespace MestreDoPC
             if (m.minCores > 0)
                 list.Add(($"CPU com pelo menos {m.minCores} núcleos", b.cpu != null && b.cpu.cores >= m.minCores));
             if (m.minGpuVramGB > 0)
-                list.Add(($"GPU com pelo menos {m.minGpuVramGB} GB de VRAM", b.gpu != null && b.gpu.vramGB >= m.minGpuVramGB));
+                list.Add(($"Vídeo com pelo menos {m.minGpuVramGB} GB de memória de vídeo", b.VideoMemoryGB >= m.minGpuVramGB));
             return list;
         }
     }

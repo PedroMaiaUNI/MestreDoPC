@@ -53,6 +53,7 @@ namespace MestreDoPC
             };
             foreach (var s in b.storage) list.Add($"Armazenamento: {s.DisplayName}");
             if (b.gpu != null) list.Add($"GPU: {b.gpu.DisplayName}");
+            else if (b.UsesIntegratedGraphics) list.Add($"Vídeo: {b.VideoDescription}");
             list.Add($"Fonte: {b.psu.DisplayName}");
             list.Add($"Cooler: {b.cooler.DisplayName}");
             return list;

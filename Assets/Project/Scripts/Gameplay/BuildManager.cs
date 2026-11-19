@@ -63,7 +63,14 @@ namespace MestreDoPC
                 part.SetFeedback(PartFeedback.Warning);
                 message = "Instalada, mas com um alerta.";
             }
-            else message = "Peça instalada.";
+            else
+            {
+                message = "Peça instalada.";
+
+                // Placa de vídeo dedicada + CPU com vídeo integrado: a integrada passa a ficar desativada.
+                if (part.Data is GpuDataSO && Build.cpu != null && Build.cpu.hasIntegratedGraphics)
+                    message = "Placa de vídeo instalada: os gráficos integrados da CPU ficam desativados.";
+            }
 
             return true;
         }

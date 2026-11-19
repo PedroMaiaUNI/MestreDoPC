@@ -26,3 +26,5 @@ MonoBehaviour:
   threads: 16
   hasIntegratedGraphics: 1
   bundledCooler: {fileID: 11400000, guid: 08c02b0967a7bd48f97aea2ca7e787c4, type: 2}
+  integratedGpuName: Radeon Graphics (RDNA 2)
+  integratedVramGB: 1
