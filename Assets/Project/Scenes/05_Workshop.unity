@@ -551,7 +551,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1350907854}
   m_HandleRect: {fileID: 1350907853}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -595,12 +595,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245352464}
   m_CullTransparentMesh: 1
---- !u!224 &281059193 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 758608800059776011, guid: 6529f1f746ae790529c3a1eb9917fb96,
-    type: 3}
-  m_PrefabInstance: {fileID: 3066915892617988501}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &321539099
 GameObject:
   m_ObjectHideFlags: 0
@@ -3290,7 +3284,6 @@ RectTransform:
   - {fileID: 652211157}
   - {fileID: 321539100}
   - {fileID: 456163253}
-  - {fileID: 281059193}
   - {fileID: 471118928}
   - {fileID: 577509940}
   - {fileID: 1920458601}

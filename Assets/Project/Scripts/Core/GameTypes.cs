@@ -16,6 +16,7 @@ namespace MestreDoPC
         public const string PartsManual = "08_PartsManual";
         public const string Evaluation = "09_Evaluation";
 
+
         public static string ForMode(GameMode mode) => mode switch
         {
             GameMode.Assembly    => Workshop,
